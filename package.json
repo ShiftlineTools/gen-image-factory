@@ -106,7 +106,7 @@
     "autoprefixer": "^10.4.21",
     "baseline-browser-mapping": "^2.9.14",
     "electron": "^41.1.1",
-    "electron-builder": "^25.1.8",
+    "electron-builder": "^26.15.3",
     "eslint": "^9.32.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
