@@ -65,6 +65,7 @@
     "webpack": "5.104.1",
     "react-cookie-consent": {
       "js-cookie": ">=3.0.6 <4.0.0"
-    }
+    },
+    "@docusaurus/theme-common": "3.9.2"
   }
 }
