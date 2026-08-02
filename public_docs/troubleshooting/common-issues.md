@@ -13,15 +13,16 @@ If you see an "Unknown Publisher" warning when installing from GitHub Releases:
 
 This warning appears because GitHub Releases artifacts are unsigned. This is expected and safe for GitHub Releases.
 
-### macOS: "App is damaged" or "Cannot be opened"
+### macOS: "App is damaged" or "Cannot be opened" or "Apple could not verify..."
 
-If macOS prevents you from opening the application:
+This happens because the application isn't notarized by Apple — expected for GitHub Releases artifacts. On recent macOS versions, right-click → Open is often no longer enough by itself, and the fix depends on which file you downloaded. Full step-by-step instructions (including the correct *order* of steps, which matters here) are in the [Installation Guide's macOS section](/docs/getting-started/installation#macos) — start there if you haven't already downloaded the app.
 
-1. Right-click the application
-2. Select "Open"
-3. Click "Open" in the security dialog
+If you've already downloaded and hit the "damaged" message, open **Terminal** and run one of these:
 
-This happens because the application is unsigned. This is expected for GitHub Releases artifacts.
+- Downloaded the **DMG**: `xattr -rd com.apple.quarantine /Applications/GenImageFactory.app`
+- Downloaded and unzipped the **`.zip`**: `sudo chmod -R 755 /path/to/GenImageFactory.app` (drag the app into the Terminal window after typing the command to fill in the path)
+
+Then try opening the app again. If it's still blocked, see the full instructions linked above.
 
 ### Linux: AppImage won't run
 
