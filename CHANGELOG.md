@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.4] - 2026-08-02
+
+### Security
+- **sharp:** 0.32.0 → 0.35.3 (high-severity advisory)
+- **electron-builder:** 25.1.8 → 26.15.3, pulling app-builder-lib/builder-util-runtime fixes
+- **website:** webpack pinned to 5.104.1, @docusaurus/plugin-google-gtag pinned to 3.9.2, plus overrides for uuid, js-cookie, and sharp transitive dependencies
+- Root and website `npm audit`: 0 vulnerabilities; all previously open Dependabot alerts (72) verified resolved and closed
+
+### Fixed
+- **Documentation:** macOS installation instructions updated — the old right-click → Open shortcut no longer works alone on recent macOS versions. Documented the correct, order-sensitive sequence (disable Gatekeeper before downloading) plus separate fallback fixes for DMG vs. zip downloads.
+
 ## [1.3.3] - 2026-05-17
 
 ### Fixed
