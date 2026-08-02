@@ -329,7 +329,7 @@ jobs:
             $builder = "./node_modules/.bin/electron-builder.cmd"
             # Use the publisher ID extracted from the cert or from secrets
             $publisherName = if ($env:MS_STORE_PUBLISHER_ID) { $env:MS_STORE_PUBLISHER_ID } else { "${{ secrets.MS_STORE_PUBLISHER_ID }}" }
-            $publisherArg = if ($publisherName) { "-c.win.publisherName=`"$publisherName`"" } else { "" }
+            $publisherArg = if ($publisherName) { "-c.win.signtoolOptions.publisherName=`"$publisherName`"" } else { "" }
             
             Write-Host "Command: $builder --win appx nsis --x64 --config electron-builder.config.js --publish never $publisherArg"
             & $builder --win appx nsis --x64 --config electron-builder.config.js --publish never $publisherArg

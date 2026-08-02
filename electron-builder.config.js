@@ -25,7 +25,8 @@ const config = {
   asarUnpack: [
     '**/node_modules/keytar/**/*',     // SecurityService: OS credential store — permanent
     '**/node_modules/sqlite3/**/*',    // ADR-009 DB layer — REMOVE in Epic 5 (→ PGlite, no native binding)
-    '**/node_modules/sharp/**/*'       // ImageProcessorService: pixel manipulation — permanent
+    '**/node_modules/sharp/**/*',      // ImageProcessorService: pixel manipulation — permanent
+    '**/node_modules/@img/**/*'        // sharp >=0.32 ships native libvips/binaries as separate @img/sharp-* packages, not inside node_modules/sharp itself
     // NOTE (Epic 5): When sqlite3 → PGlite migration lands:
     //   1. Remove the sqlite3 asarUnpack entry above
     //   2. PGlite (.wasm) requires NO asarUnpack — it is pure JS+WASM
