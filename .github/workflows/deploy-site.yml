@@ -8,6 +8,13 @@ on:
       - 'website/**'
       - 'public_docs/**'
       - '.github/workflows/deploy-site.yml'
+  release:
+    types: [published] # Redeploy once a release actually publishes, so the site's
+                        # fetch-version.js (which reads GitHub's "latest release" API)
+                        # picks up the new version instead of racing ahead of it —
+                        # the tag-push-triggered Release workflow can take 10+ minutes
+                        # to finish building and publishing, well after this workflow's
+                        # own push-triggered run (if any) has already completed.
   workflow_dispatch: # Allow manual triggering
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
