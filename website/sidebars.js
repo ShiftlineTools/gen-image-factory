@@ -67,8 +67,13 @@ const sidebars = {
     },
     {
       type: 'doc',
-      id: 'resources',
-      label: 'Resources',
+      id: 'integrations',
+      label: 'Integrations',
+    },
+    {
+      type: 'doc',
+      id: 'templates',
+      label: 'Templates',
     },
   ],
 };

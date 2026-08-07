@@ -510,11 +510,11 @@
 }
 
 .recommendedAppsDisclosure {
-  font-size: 0.75rem;
-  color: #666;
+  font-size: 0.875rem;
+  color: #a3a3a3 !important; /* beats the global `p { color: #ffffff !important }` rule in custom.css */
+  font-family: var(--ifm-font-family-monospace);
   text-align: center;
   margin-top: 1rem;
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
 
 .screenshotPlaceholder {

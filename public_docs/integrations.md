@@ -1,8 +1,8 @@
 ---
-title: Resources
+title: Integrations
 ---
 
-# Resources
+# Integrations
 
 Gen Image Factory integrates with third-party services to provide AI-powered image generation and processing capabilities. This page provides transparency about the services we use and any potential affiliate relationships.
 

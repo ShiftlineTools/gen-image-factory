@@ -9,13 +9,15 @@ export const PARTNER_DATA = {
       id: 'topaz-gigapixel',
       name: 'Topaz Labs Gigapixel',
       description: 'AI-powered image upscaling and enhancement',
-      link: 'https://www.topazlabs.com/topaz-gigapixel' // Temporary - will swap to affiliate link when approved
+      link: 'https://www.topazlabs.com/topaz-gigapixel', // Temporary - will swap to affiliate link when approved
+      isAffiliate: false
     },
     {
       id: 'flying-upload',
       name: 'Flying Upload',
       description: 'Professional file upload and management solution',
-      link: 'https://flyingupload.com/' // Temporary - will swap to affiliate link when approved
+      link: 'https://shiftlinetools.com/flying-uploads',
+      isAffiliate: true
     }
   ]
 };

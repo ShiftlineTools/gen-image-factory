@@ -162,7 +162,7 @@ export default function Home(): React.JSX.Element {
             </div>
           </div>
         </section>
-        <div className={`integration-helper ${styles.fadeInUp} ${styles.delay2}`} style={{textAlign: 'center', fontSize: '0.75rem', color: '#a3a3a3', marginTop: '1rem', marginBottom: '2rem', fontFamily: 'var(--ifm-font-family-monospace)', padding: '0 1rem'}}>
+        <div className={`integration-helper ${styles.fadeInUp} ${styles.delay2}`} style={{textAlign: 'center', fontSize: '0.875rem', color: '#a3a3a3', marginTop: '1rem', marginBottom: '2rem', fontFamily: 'var(--ifm-font-family-monospace)', padding: '0 1rem'}}>
           *API integrations for professional workflows.
         </div>
 
@@ -286,7 +286,7 @@ export default function Home(): React.JSX.Element {
                   <a
                     href={app.link}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel={app.isAffiliate ? 'sponsored noopener noreferrer' : 'noopener noreferrer'}
                     className={styles.recommendedAppButton}
                   >
                     LEARN MORE →
@@ -296,7 +296,7 @@ export default function Home(): React.JSX.Element {
             </div>
 
             <p className={styles.recommendedAppsDisclosure}>
-              *Shiftline Tools recommends software used in our internal pro workflows.
+              *Shiftline Tools recommends software used in our internal pro workflows. If you purchase through these affiliate links, we may earn a commission at no extra cost to you, which helps support the continued development of our tools.
             </p>
           </div>
         </section>

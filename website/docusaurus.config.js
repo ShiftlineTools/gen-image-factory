@@ -155,9 +155,15 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'resources',
+            docId: 'integrations',
             position: 'right',
-            label: 'Resources',
+            label: 'Integrations',
+          },
+          {
+            type: 'doc',
+            docId: 'templates',
+            position: 'right',
+            label: 'Templates',
           },
           {
             type: 'doc',
