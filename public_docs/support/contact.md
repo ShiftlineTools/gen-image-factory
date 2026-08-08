@@ -6,7 +6,7 @@ Need help or have questions about Gen Image Factory? We're here to assist you.
 
 For support inquiries, feature requests, or general questions, please contact us at:
 
-**Email:** [admin@shiftlinetools.com](mailto:admin@shiftlinetools.com)
+**Email:** [support@shiftlinetools.com](mailto:support@shiftlinetools.com)
 
 ## What to Include
 

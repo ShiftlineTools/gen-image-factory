@@ -37,7 +37,7 @@ Gen Image Factory is distributed through:
 
 For support, feature requests, or questions:
 
-- **Email**: [admin@shiftlinetools.com](mailto:admin@shiftlinetools.com)
+- **Email**: [support@shiftlinetools.com](mailto:support@shiftlinetools.com)
 - **GitHub**: [ShiftlineTools/gen-image-factory](https://github.com/ShiftlineTools/gen-image-factory)
 
 ## Shiftline Tools

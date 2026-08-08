@@ -19,7 +19,7 @@ Gen Image Factory is developed and maintained by an individual developer (not a 
 
 If you discover a security vulnerability, please report it responsibly:
 
-1. **Email**: [admin@shiftlinetools.com](mailto:admin@shiftlinetools.com)
+1. **Email**: [security@shiftlinetools.com](mailto:security@shiftlinetools.com)
    - Use the subject line: `[SECURITY] Gen Image Factory Vulnerability Report`
    - Include a detailed description of the vulnerability
    - Provide steps to reproduce (if applicable)
@@ -45,7 +45,7 @@ We appreciate your responsible disclosure and will acknowledge your contribution
 
 ## Security Contact Information
 
-- **Email**: [admin@shiftlinetools.com](mailto:admin@shiftlinetools.com)
+- **Email**: [security@shiftlinetools.com](mailto:security@shiftlinetools.com)
 - **GitHub**: [ShiftlineTools/gen-image-factory](https://github.com/ShiftlineTools/gen-image-factory)
 
 ## Data Handling and Privacy Commitments
@@ -195,5 +195,5 @@ We appreciate security researchers and users who responsibly disclose vulnerabil
 
 **Maintained by**: Shiftline Tools
 
-For questions or concerns about this security policy, contact [admin@shiftlinetools.com](mailto:admin@shiftlinetools.com).
+For questions or concerns about this security policy, contact [security@shiftlinetools.com](mailto:security@shiftlinetools.com).
 

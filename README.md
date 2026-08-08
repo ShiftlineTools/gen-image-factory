@@ -87,7 +87,7 @@ The documentation includes:
 
 ## Support
 
-- **Email**: [admin@shiftlinetools.com](mailto:admin@shiftlinetools.com)
+- **Email**: [support@shiftlinetools.com](mailto:support@shiftlinetools.com)
 - **GitHub Issues**: [Report a bug or request a feature](https://github.com/ShiftlineTools/gen-image-factory/issues)
 - **Documentation**: [genimage.shiftlinetools.com](https://genimage.shiftlinetools.com)
 
