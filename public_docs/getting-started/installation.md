@@ -32,44 +32,36 @@ winget install "Gen Image Factory"
 
 ## macOS
 
-Gen Image Factory is not currently notarized by Apple (notarization requires a paid Apple Developer Program membership), so macOS Gatekeeper blocks it on first launch. On recent macOS versions, the old "right-click → Open" shortcut is often no longer enough by itself.
+1. **Download the DMG**:
+   Go to the [GitHub Releases page](https://github.com/ShiftlineTools/gen-image-factory/releases/latest) and look for the release marked with the green "Latest" badge. Download the file matching this exact naming pattern:
+   `GenImageFactory-[Version]-arm64.dmg` (e.g., `GenImageFactory-1.3.4-arm64.dmg`)
 
-### Recommended: Allow apps from unidentified developers (do this *before* downloading)
+2. **Open and Drag**:
+   Double-click the downloaded `.dmg` file to mount it, then drag **Gen Image Factory** directly into your Applications folder.
 
-**The order here matters.** macOS tags any file you download with a quarantine flag before you even open it — if you download the app first and change this setting afterward, it will still be blocked and you'll need to start over. Do these steps first, in order:
+3. **Handle Overwrites**:
+   If prompted that the app already exists, click **Replace** to update to the latest version.
 
-1. Open **Terminal** (Spotlight search → type "Terminal")
-2. Run:
+4. **Eject the DMG**:
+   Close or eject the disk image from your desktop so you are working strictly out of the system folder.
+
+5. **Open Terminal**:
+   Hit `Cmd + Space`, type **Terminal**, and hit Enter.
+
+6. **Run the Fix**:
+   Paste the following quarantine removal command, hit Enter, and type your Mac password when prompted:
    ```bash
-   sudo spctl --master-disable
+   sudo xattr -cr /Applications/GenImageFactory.app
    ```
-3. Enter your Mac password when prompted (the cursor won't move as you type — that's normal for `sudo`). You should see a message about globally disabling the assessment system needing to be confirmed in System Settings — that's expected.
-4. Open **System Settings → Privacy & Security**, scroll to **"Allow applications from"**, and switch it from "App Store & Known Developers" to **"Anywhere"** (you'll be asked for your password again to confirm). If "Anywhere" isn't available yet, go back and make sure step 2 actually ran successfully.
 
-Only now, download and install:
+7. **Create Shortcut**:
+   Go into the Applications folder, right-click (or drag while holding `Option + Command`) to create a fresh desktop shortcut or add it to your Dock.
 
-5. Download the **DMG file** from [GitHub Releases](https://github.com/ShiftlineTools/gen-image-factory/releases)
-6. Open the DMG file and drag the application to the Applications folder
-7. Open the application — it should launch normally (you'll still get one "are you sure?" confirmation dialog, which is expected)
+   **NB! Crucial for Updates**:
+   If you are updating from an older version, delete your old desktop shortcut or Dock icon first. Then, go into the Applications folder, right-click (or drag while holding `Option + Command`) the fresh app to recreate your desktop shortcut or re-add it to your Dock so it doesn't point to cached paths.
 
-**Optional cleanup**: once the app is running, you can switch "Allow applications from" back to "App Store & Known Developers" in System Settings if you'd rather not leave the setting open for future downloads too.
-
-### If you already downloaded the app first
-
-If you downloaded before doing the above and now get "Apple could not verify..." or "is damaged and can't be opened," do steps 1-4 above (in that order), then fix the already-downloaded copy instead of re-downloading:
-
-- **If you installed the DMG** (dragged the app into Applications): open **Terminal** and run
-  ```bash
-  xattr -rd com.apple.quarantine /Applications/GenImageFactory.app
-  ```
-- **If you downloaded and unzipped the `.zip` build**: unzipping can also strip the app's executable permission, so run this instead (drag the app's icon into the Terminal window after typing the command to fill in the exact path, then press Enter):
-  ```bash
-  sudo chmod -R 755 /path/to/GenImageFactory.app
-  ```
-
-Then try opening the app again.
-
-**Note**: Unsigned macOS applications always show a security warning on first use — this is expected for GitHub Releases artifacts and reflects the lack of a paid Apple notarization certificate, not a problem with the app itself. See our [Privacy Policy](/docs/legal/privacy-policy) for what the app does and doesn't do with your data.
+8. **Final Launch**:
+   Double-click the app to launch it instantly with zero errors or security warnings.
 
 ## Linux
 
