@@ -108,17 +108,6 @@
   font-weight: 400;
 }
 
-.brandLink {
-  color: #a3a3a3;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s ease;
-}
-
-.brandLink:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
 
 .ctaButtons {
   display: flex;

@@ -113,15 +113,7 @@ export default function Home(): React.JSX.Element {
 
             {/* Subtitle */}
             <p className={`${styles.heroSubtitle} ${styles.fadeInUp} ${styles.delay2}`}>
-              AI-powered image generation and processing by{' '}
-              <a
-                href="https://github.com/ShiftlineTools"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.brandLink}
-              >
-                Shiftline Tools
-              </a>
+              High-volume desktop automation utility designed for Print-on-Demand and microstock creators. Automate your generation, background removal, extra alpha channel removal, metadata tagging and quality control.
             </p>
 
             {/* Call-to-Action Buttons */}
@@ -176,43 +168,43 @@ export default function Home(): React.JSX.Element {
             <div className={styles.featuresGrid}>
               {([
                 {
-                  title: 'Keyword & Template Lab',
-                  description: 'Integrate external .txt prompt templates and .csv keyword libraries for automated image orchestration and metadata control.',
+                  title: 'Mass Storefront Automation',
+                  description: 'Turn simple text lists and keyword CSVs into ready-to-upload files and automated metadata control for Merch by Amazon, Displate and Etsy.',
                   icon: <FileText className={styles.featureIcon} aria-hidden="true" />,
                   link: '/docs/user-guide/settings#template-configuration',
                   className: `${styles.fadeInUp}`,
                 },
                 {
-                  title: 'AI-Powered Generation',
-                  description: 'Leverage advanced AI models for high-quality image creation with intelligent processing capabilities.',
+                  title: 'High-Volume AI Generation',
+                  description: 'Leverage advanced generative models to produce massive batches of commercial-grade digital wall art and vector assets effortlessly.',
                   icon: <BrainCircuit className={styles.featureIcon} aria-hidden="true" />,
                   link: '/docs/user-guide/settings#required-api-keys',
                   className: `${styles.fadeInUp} ${styles.delay1}`,
                 },
                 {
-                  title: 'Quality Control',
-                  description: 'Automated quality assessment using AI to ensure consistent, professional-grade image output.',
+                  title: 'Automated Quality Filtering',
+                  description: 'Screen out flawed AI generations automatically to guarantee your store listings only feature top-tier, crisp visual assets.',
                   icon: <ShieldCheck className={styles.featureIcon} aria-hidden="true" />,
                   link: '/docs/user-guide/failed-images-review',
                   className: `${styles.fadeInUp} ${styles.delay2}`,
                 },
                 {
-                  title: 'Batch Processing',
-                  description: 'Process multiple images efficiently with optimized workflows and sequential job execution.',
+                  title: 'Bulk Pipeline Execution',
+                  description: 'Process hundreds of images in sequence with optimized job queues tailored for rapid e-commerce publishing.',
                   icon: <Zap className={styles.featureIcon} aria-hidden="true" />,
                   link: '/docs/user-guide/settings#job-configuration',
                   className: `${styles.fadeInUp} ${styles.delay3}`,
                 },
                 {
-                  title: 'Metadata Generation',
-                  description: 'Automatic metadata creation for generated images with comprehensive tagging and organization.',
+                  title: 'Instant SEO Metadata',
+                  description: 'Automatically generate buyer-optimized titles, tags, and descriptions to completely eliminate tedious manual data entry.',
                   icon: <Database className={styles.featureIcon} aria-hidden="true" />,
                   link: '/docs/user-guide/settings#job-configuration',
                   className: `${styles.fadeInUp} ${styles.delay1}`,
                 },
                 {
-                  title: 'Cross-Platform',
-                  description: 'Available for Windows, macOS, and Linux with native performance and platform integration.',
+                  title: 'Cross-Platform Desktop App',
+                  description: 'Native performance for Windows, macOS, and Linux built for power users who demand total control and zero login requirements.',
                   icon: <Monitor className={styles.featureIcon} aria-hidden="true" />,
                   link: '/docs/getting-started/installation',
                   className: `${styles.fadeInUp} ${styles.delay2}`,
@@ -236,7 +228,7 @@ export default function Home(): React.JSX.Element {
         <section className={styles.productShowcase}>
           <div className={styles.container}>
             <h2 className={`${styles.sectionTitle} ${styles.fadeInUp}`}>
-              See It In Action
+              Watch the Masterclass Playlist
             </h2>
 
             <div className={`${styles.screenshotPlaceholder} ${styles.fadeInUp} ${styles.delay1}`} style={{ padding: 0, overflow: 'hidden', background: 'transparent', boxShadow: 'none' }}>
@@ -252,8 +244,8 @@ export default function Home(): React.JSX.Element {
                 cursor: 'pointer'      // Shows the user it is clickable
               }}>
                 <iframe
-                  src="https://www.youtube-nocookie.com/embed/GjooSAGE5NA?rel=0&modestbranding=1"
-                  title="Gen Image Factory Trailer"
+                  src="https://www.youtube-nocookie.com/embed/videoseries?list=PLMnsuvEr-iQk"
+                  title="Gen Image Factory Masterclass Playlist"
                   style={{
                     position: 'absolute',
                     top: 0,
