@@ -244,7 +244,7 @@ export default function Home(): React.JSX.Element {
                 cursor: 'pointer'      // Shows the user it is clickable
               }}>
                 <iframe
-                  src="https://www.youtube-nocookie.com/embed/videoseries?list=PLMnsuvEr-iQk"
+                  src="https://www.youtube-nocookie.com/embed?listType=playlist&list=PLMnsuvEr-iQk"
                   title="Gen Image Factory Masterclass Playlist"
                   style={{
                     position: 'absolute',
