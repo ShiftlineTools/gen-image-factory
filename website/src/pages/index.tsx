@@ -232,30 +232,29 @@ export default function Home(): React.JSX.Element {
             </h2>
 
             <div className={`${styles.screenshotPlaceholder} ${styles.fadeInUp} ${styles.delay1}`} style={{ padding: 0, overflow: 'hidden', background: 'transparent', boxShadow: 'none' }}>
-              <div className="video-container" style={{
+              <div style={{
                 position: 'relative',
                 width: '100%',
                 aspectRatio: '16/9',
-                zIndex: 10,           // This lifts it above hero overlays
+                zIndex: 10,
                 marginBottom: '2rem',
                 borderRadius: '12px',
                 overflow: 'hidden',
                 boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
-                cursor: 'pointer'      // Shows the user it is clickable
               }}>
                 <iframe
-                  src="https://www.youtube-nocookie.com/embed?listType=playlist&list=PLMnsuvEr-iQk"
-                  title="Gen Image Factory Masterclass Playlist"
+                  src="https://www.youtube-nocookie.com/embed/videoseries?si=TYRC8Gpenx3Prwyv&list=PLMnsuvEr-iQk"
+                  title="Mastering Gen Image Factory: From Local Generation to Microstock"
                   style={{
                     position: 'absolute',
                     top: 0,
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    pointerEvents: 'auto' // Ensures clicks reach the video
+                    border: 0,
                   }}
-                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 ></iframe>
               </div>
